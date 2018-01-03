@@ -30,13 +30,14 @@ function loadFunctions(rootPath) {
       let config = fs.readFileSync(`${rootPath}/functions/${fname}/function.json`)
       config = config.toString() ? JSON.parse(config.toString()) : {}
 
-      arr.push(Object.assign(projectConfig, {
+      arr.push(Object.assign({}, projectConfig, {
         name: fname,
         project_name: projectConfig.name
       }, config))
     }
     return fname
   })
+
   return arr
 }
 
