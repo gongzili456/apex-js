@@ -1,5 +1,5 @@
 {
-  "name": "apex-js",
+  "name": "apex-cli",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,6 +8,7 @@
     "commander": "^2.12.2",
     "prompt": "^1.0.0",
     "require-dir": "^0.3.2",
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.7.8",
+    "user": "0.0.0"
   }
 }
