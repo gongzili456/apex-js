@@ -20,14 +20,14 @@ module.exports = function deploy(program) {
 
 function loadFunctions(rootPath) {
   const arr = []
-  const functionNames = fs.readdirSync('functions')
+  const functionNames = fs.readdirSync(`${rootPath}/functions`)
 
   let projectConfig = fs.readFileSync(`${rootPath}/project.json`)
   projectConfig = JSON.parse(projectConfig.toString())
 
   functionNames.map(function (fname) {
-    if (fs.statSync(`./functions/${fname}`).isDirectory()) {
-      let config = fs.readFileSync(`./functions/${fname}/function.json`)
+    if (fs.statSync(`${rootPath}/functions/${fname}`).isDirectory()) {
+      let config = fs.readFileSync(`${rootPath}/functions/${fname}/function.json`)
       config = config.toString() ? JSON.parse(config.toString()) : {}
 
       arr.push(Object.assign(projectConfig, {

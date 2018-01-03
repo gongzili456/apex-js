@@ -1,8 +1,0 @@
-{
-  "name": "app-apex-test",
-  "description": "",
-  "memory": 128,
-  "timeout": 5,
-  "role": "arn:aws-cn:iam::875780457039:role/app-apex-test_lambda_function",
-  "environment": {}
-}
