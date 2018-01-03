@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "bin": {
-    "apex-cli": "apex-cli"
+    "apex-cli": "index.js"
   },
   "license": "MIT",
   "dependencies": {
