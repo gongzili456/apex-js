@@ -1,6 +1,6 @@
 {
   "name": "apex-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "index.js",
   "bin": {
     "apex-cli": "index.js"
@@ -8,10 +8,21 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.176.0",
+    "babel-cli": "^6.26.0",
     "commander": "^2.12.2",
     "prompt": "^1.0.0",
     "require-dir": "^0.3.2",
     "shelljs": "^0.7.8",
-    "user": "0.0.0"
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-syntax-async-functions": "^6.8.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-es2015-parameters": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-eslatest-node6": "^1.0.1",
+    "babel-register": "^6.9.0"
   }
 }
