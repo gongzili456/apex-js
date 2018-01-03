@@ -1,7 +1,9 @@
 {
   "name": "apex-cli",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "bin": {
+    "apex-cli": "apex-cli"
+  },
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.176.0",
