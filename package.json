@@ -1,6 +1,7 @@
 {
   "name": "apex-cli",
   "version": "1.0.1",
+  "main": "index.js",
   "bin": {
     "apex-cli": "apex-cli"
   },
