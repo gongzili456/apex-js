@@ -1,0 +1,13 @@
+{
+  "name": "apex-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.176.0",
+    "commander": "^2.12.2",
+    "prompt": "^1.0.0",
+    "require-dir": "^0.3.2",
+    "shelljs": "^0.7.8"
+  }
+}
