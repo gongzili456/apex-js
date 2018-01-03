@@ -96,7 +96,7 @@ function createProjectConfig(config) {
 
 function createFunctions() {
   console.log('creating ./functions')
-  const cmd = `mkdir -p functions/hello && cp ${__dirname}/../files/functionTemplate.js functions/hello/index.js`
+  const cmd = `mkdir -p functions/hello && cp ${__dirname}/../files/functionTemplate.js functions/hello/index.js && cp ${__dirname}/../files/function.json functions/hello/function.json`
 
   if (shell.exec(cmd).code !== 0) {
     shell.echo('Error: Create functions failed');
