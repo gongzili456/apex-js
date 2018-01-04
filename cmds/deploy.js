@@ -51,7 +51,7 @@ function deployFunction(func, rootPath) {
 
   // 编译文件到 ES5
   console.log('complie files ...', `babel ${functionPath} -q -d ${functionPath}/dist`)
-  shell.exec(`babel ${functionPath} -q -d ${functionPath}/dist`)
+  shell.exec(`babel ${functionPath} --ignore ${functionPath}/node_modules -q -d ${functionPath}/dist`)
   // zip file
   shell.exec(`cp ${functionPath}/package.json ${functionPath}/dist`)
   console.log('zip files ...', `cd ${functionPath}/dist && zip -rq ../${functionName}.zip * && cd -`)
